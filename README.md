@@ -24,19 +24,14 @@ npm install @yumikodev/pades-bridge
 First, prepare your PDF by adding a space for the signature.
 
 ```typescript
-import {
-  addPlaceholder,
-  DEFAULT_SIGNATURE_LENGTH,
-} from "@yumikodev/pades-bridge";
+import { addPlaceholder } from "@yumikodev/pades-bridge";
 
 const { pdfWithPlaceholder } = await addPlaceholder(originalPdfBuffer, {
   reason: "Surgery Report Validation",
   contactInfo: "doctor@hospital.com",
   name: "Dr. Edwin Jibaja",
   location: "Lima, Peru",
-  signatureLength: 8192, // Space reserved for the PKCS7 signature
-  // or:
-  // signatureLength: DEFAULT_SIGNATURE_LENGTH,
+  signatureLength: 8192, // Space reserved for the PKCS7 signature (check @signpdf/utils)
 });
 ```
 

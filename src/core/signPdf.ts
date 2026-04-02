@@ -8,7 +8,7 @@ import { Signer, SignPdf } from "@signpdf/signpdf";
  * @returns - A Promise that resolves to the fully signed PDF Buffer.
  */
 export async function signPdf(pdfBuffer: Buffer, signer: Signer) {
-  const { sign } = new SignPdf();
-  const signedPdf = await sign(pdfBuffer, signer);
+  const signerInstance = new SignPdf();
+  const signedPdf = await signerInstance.sign(pdfBuffer, signer);
   return signedPdf;
 }
