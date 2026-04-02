@@ -6,7 +6,7 @@ import {
   PDFSignature,
   PDFString,
 } from "pdf-lib";
-import { addPlaceholder } from "../core/addPlaceholder";
+import { addPlaceholder } from "../src/core/addPlaceholder";
 
 async function createMockPdf() {
   const pdfDoc = await PDFDocument.create();

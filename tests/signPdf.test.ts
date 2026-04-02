@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { signPdf, ExternalSigner, addPlaceholder } from "../";
+import { signPdf, ExternalSigner, addPlaceholder } from "../src";
 import { PDFDocument } from "pdf-lib";
 import {
   DEFAULT_SIGNATURE_LENGTH,

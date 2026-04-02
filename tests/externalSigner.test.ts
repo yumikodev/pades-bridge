@@ -1,7 +1,7 @@
 import { describe, expect, it, vi } from "vitest";
-import { ExternalSigner } from "../classes/externalSigner";
+import { ExternalSigner } from "../src/classes/externalSigner";
 import { Signer } from "@signpdf/signpdf";
-import { getSHA256 } from "../helpers/getSHA256";
+import { getSHA256 } from "../src/helpers/getSHA256";
 
 describe("ExternalSigner", () => {
   it("should be an instance of Signer", () => {

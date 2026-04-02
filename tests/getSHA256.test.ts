@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { getSHA256 } from "../helpers/getSHA256";
+import { getSHA256 } from "../src/helpers/getSHA256";
 
 describe("getSHA256()", () => {
   it("should be instance of buffer", () => {

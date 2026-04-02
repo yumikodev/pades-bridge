@@ -10,7 +10,7 @@
   "scripts": {
     "prepublish": "npm run build",
     "build": "rm -rf dist && tsc",
-    "test": "vitest src/tests/**/*.test.ts"
+    "test": "vitest"
   },
   "keywords": [],
   "author": "Edwin Jibaja <ejibajazuniga@gmail.com>",
