@@ -1,0 +1,35 @@
+{
+  "name": "@yumikodev/pades-bridge",
+  "version": "1.0.0",
+  "description": "A high-level utility for PAdES-compliant digital signing in Node.js. It facilitates the creation of placeholders, hash calculation, and integration with external signing providers (HSMs/APIs).",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "Edwin Jibaja <ejibajazuniga@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yumikodev/pades-bridge.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yumikodev/pades-bridge/issues"
+  },
+  "homepage": "https://github.com/yumikodev/pades-bridge#readme",
+  "license": "GPL-3.0-only",
+  "packageManager": "pnpm@10.33.0",
+  "dependencies": {
+    "@signpdf/placeholder-pdf-lib": "3.3.0",
+    "@signpdf/signpdf": "3.3.0",
+    "@signpdf/utils": "3.3.0",
+    "pdf-lib": "1.17.1"
+  },
+  "devDependencies": {
+    "@types/node": "25.5.0",
+    "typescript": "6.0.2"
+  }
+}
