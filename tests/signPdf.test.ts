@@ -52,8 +52,8 @@ describe("signPdf() Orchestrator", () => {
     const isPlaceholderOnly = signature.replace(/0/g, "").length === 0;
     expect(isPlaceholderOnly).toBe(false);
 
-    await mkdir(resolve("./src/tests/output/"), { recursive: true });
-    await writeFile(resolve("./src/tests/output/test.pdf"), signedPdf);
+    await mkdir(resolve("./tests/output/"), { recursive: true });
+    await writeFile(resolve("./tests/output/test.pdf"), signedPdf);
   });
 
   it("should fail if the PDF does not have a placeholder", async () => {
