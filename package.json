@@ -9,7 +9,7 @@
   ],
   "scripts": {
     "prepublish": "npm run build",
-    "build": "tsc",
+    "build": "rm -rf dist && tsc",
     "test": "vitest src/tests/**/*.test.ts"
   },
   "keywords": [],
