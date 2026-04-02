@@ -5,7 +5,7 @@ import { getSHA256 } from "../helpers/getSHA256";
  * Callback definition for external signing operations.
  * Receives the SHA-256 hash of the PDF and expects a PKCS#7/CMS signature buffer in return.
  */
-export type ExternalHandlerFunction = (hash: Buffer) => Promise<Buffer>;
+export type ExternalHandlerFunction = (pdfHash: Buffer) => Promise<Buffer>;
 
 /**
  * A custom Signer implementation that delegates the cryptographic signing
